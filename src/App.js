@@ -7,6 +7,8 @@ import {
   Button,
   Input,
   GridColumn,
+  Header,
+  Image,
 } from "semantic-ui-react";
 
 class App extends Component {
@@ -14,7 +16,16 @@ class App extends Component {
     return (
       <div>
         <Grid container textAlign="center">
-          <br />
+          
+          <Grid.Row>
+            <Grid.Column width={6}>
+              <Header as="h2" color="teal">
+                <Image src="https://s3-ap-southeast-1.amazonaws.com/niomic/img-v1/c_login_logo.png"/>
+                Member Login
+              </Header>
+            </Grid.Column>
+          </Grid.Row>
+
           <Grid.Row>
             <GridColumn width={6}>
               <Form>
